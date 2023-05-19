@@ -1,0 +1,8 @@
+{% extends 'base.html' %} <!--inherit from the base.html-->
+
+
+{% block content %}
+    <h1>{% block title %} Projet technique {% endblock %}</h1>
+        {{ data|safe }}
+
+{% endblock %}

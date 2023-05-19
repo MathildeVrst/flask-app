@@ -1,0 +1,11 @@
+
+{% extends 'base.html' %} <!--inherit from the base.html-->
+
+{% block content %}
+    <h1>{% block title %} Bibliographie en humanités numériques {% endblock %}</h1>
+    <ul>
+		{% for item in data %}
+		<li><a href="{{item['data']['url']}}" target="blank" style="text-decoration:underline paleturquoise ; color: black;">{{item['citation']|safe}}</a></li>
+		{% endfor %}
+		</ul>
+{% endblock %}

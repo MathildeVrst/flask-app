@@ -1,0 +1,6 @@
+{% extends 'base.html' %} <!--inherit from the base.html-->
+
+{% block content %}
+    <h1>{% block title %} Essai {% endblock %}</h1>
+    {{ content|safe }}
+{% endblock %}
