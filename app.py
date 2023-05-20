@@ -18,8 +18,6 @@ app = Flask(__name__, template_folder='./templates/') # lancement de l'applicati
 
 freezer = Freezer(app)
 
-app.config['FREEZER_BASE_URL'] = 'https://mathildevrst.github.io/flask-app/'
-
 ###############
 ### Accueil ### 
 ###############
@@ -173,6 +171,9 @@ def jupytertohtml():
 ###########
 
 if __name__ == '__main__':
+    app.config['FREEZER_RELATIVE_URLS'] = True  # Utiliser des URL relatives
+    app.config['FREEZER_DESTINATION'] = 'docs'  # Dossier de destination pour les fichiers générés
+    app.config['FREEZER_BASE_URL'] = 'https://mathildevrst.github.io/flask-app/'  # URL de votre site GitHub Pages
   #freezer.run(debug=True)
   freezer.freeze()
   #app.run(debug=True)
