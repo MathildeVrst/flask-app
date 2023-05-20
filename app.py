@@ -171,6 +171,6 @@ def jupytertohtml():
 ###########
 
 if __name__ == '__main__':
-  freezer.run(debug=True)
-  #freezer.freeze()
+  #freezer.run(debug=True)
+  freezer.freeze()
   #app.run(debug=True)
