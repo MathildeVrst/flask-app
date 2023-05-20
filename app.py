@@ -175,5 +175,5 @@ if __name__ == '__main__':
     app.config['FREEZER_DESTINATION'] = 'docs'  # Dossier de destination pour les fichiers générés
     app.config['FREEZER_BASE_URL'] = 'https://mathildevrst.github.io/flask-app/'  # URL de votre site GitHub Pages
   #freezer.run(debug=True)
-  freezer.freeze()
+    freezer.freeze()
   #app.run(debug=True)
