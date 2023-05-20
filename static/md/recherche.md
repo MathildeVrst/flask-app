@@ -1,7 +1,7 @@
 ---
 title: Examen de synthèse 
 subtitle: doctorat en littérature, option Humanités numériques 
-date: last-modified
+date: 2023-05-19
 author: Mathilde Verstraete
 date-format: "D MMMM YYYY"
 lang: fr
