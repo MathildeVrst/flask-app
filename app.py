@@ -38,7 +38,7 @@ def convert_markdown_to_html(markdown_file, html_file):
     with open(html_file, 'w') as file:
         file.write(output)
 
-@app.route({{ url_for('recherche')}})
+@app.route('/mathildevrst.github.io/recherche')
 def render_markdown():
     # Chemin d'accès au fichier Markdown
     markdown_file = 'static/md/recherche.md'
