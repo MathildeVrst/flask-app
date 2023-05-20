@@ -18,6 +18,8 @@ app = Flask(__name__, template_folder='./templates/') # lancement de l'applicati
 
 freezer = Freezer(app)
 
+app.config['FREEZER_BASE_URL'] = 'https://mathildevrst.github.io/flask-app/'
+
 ###############
 ### Accueil ### 
 ###############
