@@ -12,8 +12,11 @@ from nbconvert import HTMLExporter
 from pybtex.database import BibliographyData, Entry
 from pybtex.style.formatting.unsrt import Style
 from pybtex.backends.html import Backend as HTMLBackend
+from flask_frozen import Freezer
 
 app = Flask(__name__, template_folder='./templates/') # lancement de l'application (qui va s'appeler app)
+
+freezer = Freezer(app)
 
 ###############
 ### Accueil ### 
@@ -168,4 +171,5 @@ def jupytertohtml():
 ###########
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  freezer.freeze()
+  #app.run(debug=True)
